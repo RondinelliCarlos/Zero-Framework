@@ -7,14 +7,20 @@
 	font-family: roboto;
 	font-weight: 400;
 }
-
+.section {
+	padding: 25px 0;
+}
+.divider {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0 50px;
+}
 a{text-decoration: none;}
 .container {
 	max-width: 1170px;
 	width: 90%;
 	margin: 0 auto;
 }
-@media (min-width: 601px) {
+@media (min-width: 751px) {
 	.container {
 		width: 85%;
 	}
@@ -27,7 +33,7 @@ a{text-decoration: none;}
 
 .row {
 	margin: 0 2px;
-	padding: 2px 0;
+	padding: 1px 0;
 }
 
 
@@ -57,7 +63,7 @@ a{text-decoration: none;}
 .col.s11{width: 91.6666%}
 .col.s12{width: 100% }
 
-@media (min-width: 601px) {
+@media (min-width: 751px) {
 	.col.m1{width: 8.3333% }
 	.col.m2{width: 16.6666%}
 	.col.m3{width: 25%}

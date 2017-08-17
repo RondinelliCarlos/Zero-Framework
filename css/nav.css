@@ -7,6 +7,7 @@ nav {
 nav .nav-wrapper {
 	min-height: 56px;
 	height: auto;
+	padding: 0 15px;
 }
 nav a, ul{
 	color: #fff;
@@ -62,7 +63,9 @@ nav ul a:hover {
 	position: fixed;
 
 }
-
+.active{
+	background-color: teal; 
+}
 
 @media (max-width: 993px){
 	nav .brand-logo {
@@ -70,7 +73,7 @@ nav ul a:hover {
 		-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	}
-	nav ul li{
+	nav ul, li a.btndrop{
 		display: none;
 	}
 }
