@@ -9,7 +9,14 @@
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/card.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<link rel="stylesheet" href="css/btn.css">
+	<link rel="stylesheet" href="css/pagination.css">
+	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+
+
 </head>
 <body>
 <!-- NAVBAR -->
@@ -18,10 +25,10 @@
 		<div class="nav-wrapper m-teal">
 			<a href="#" class="brand-logo">logo</a>
 			<ul>
-				<li><a href="#" class="active">home</a></li>
-				<li><a href="#">sobre</a></li>
-				<li><a href="#">portifolio</a></li>
-				<li><a href="#">contato</a></li>
+				<li class="underline"><a href="#" class="active">home</a></li>
+				<li class="underline"><a href="#">sobre</a></li>
+				<li class="underline"><a href="#">portifolio</a></li>
+				<li class="underline"><a href="#">contato</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -29,16 +36,18 @@
 
 <!-- Banner Index -->
 <div class="banner m-teal ">
-	<div  class="container">
+	<div  class="container section">
 		<div class="row">
-			<div class="col s12 m12 l12">
-				<h1 class="banner-title">Zero Framwork</h1>
+			<div class="center col s12 m12 l12">
+				<h1 class="banner-title title">Zero Framwork</h1>
+				<h2 class="banner-title">version 0.2</h2>
  			</div>
  		</div>
 		<div class="row">
 			<div class="col s12 m12 l12">
 				<div class="caption">
-					<a href="" class="border">Donwload</a>
+					<a href="https://github.com/RondinelliCarlos/Zero-Framework" target="_blank" class="border m-cyan">Donwload</a>
+					
 				</div>
 			</div>
 		</div>
@@ -49,11 +58,11 @@
 <div class="section">
 	<div class="container">
 		<div class="row">
-			<div class="col s12 m12 l4">
+			<div class="col s12 m4 l4">
 				<div class="card">
 					<div class="center">
 						<h3 class="card-title">Responsive</h3><br>
-						<i class="mdi mdi-responsive mdi-50px"></i>
+						<i class="mdi mdi-responsive mdi-100px"></i>
 					</div>
 					<div class="card-content">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -63,11 +72,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m12 l4">
+			<div class="col s12 m4 l4">
 				<div class="card">
 					<div class="center">
 						<h3 class="card-title">Standard CSS</h3><br>
-						<i class="mdi mdi-language-css3 mdi-50px"></i>
+						<i class="mdi mdi-language-css3 mdi-100px"></i>
 					</div>
 					<div class="card-content">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -77,11 +86,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m12 l4">
+			<div class="col s12 m4 l4">
 				<div class="card">
 					<div class="center">
 						<h3 class="card-title">Standard CSS</h3><br>
-						<i class="mdi mdi-diamond mdi-50px"></i>
+						<i class="mdi mdi-diamond mdi-100px"></i>
 					</div>
 					<div class="card-content">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -94,6 +103,8 @@
 		</div>
 	</div>
 </div>
+
+<div class="divider"></div>
 
 <!-- color class -->
 <div class="section">
@@ -162,13 +173,14 @@
 	</div>
 </div>
 
-<!-- System Grid -->
+<div class="divider"></div>
 
+<!-- System Grid -->
 <div class="section">
 	<div class="container">
 		<div class="row">
 			<div class="col s12 m12 l12">
-				<h3 class="title">Grid System</h3>
+				<h3 class="center title">Grid System</h3>
 			</div>
 		</div>
 		<div class="row center">
@@ -220,5 +232,286 @@
 		</div>
 	</div>
 </div>
+
+<div class="divider"></div>
+
+<!-- Tables -->
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h3 class="center title">Tables</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<table class="tables">
+					<thead class="m-red">
+						<tr>
+							<th>Firstname</th>
+							<th>Lastname</th> 
+							<th>Age</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Jill</td>
+							<td>Smith</td>
+							<td>50</td>
+						</tr>
+						<tr>
+							<td>Eve</td>
+							<td>Jackson</td>
+							<td>94</td>
+						</tr>
+						<tr>
+							<td>John</td>
+							<td>Doe</td>
+							<td>80</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Forms and Lists -->
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h3 class="center title">Forms and Lists</h3>
+			</div>
+		</div>
+		<div class="row card">
+			<div class="col s12 m6 l6">
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<span class="title">Input Form</span>
+					</div>
+				</div>
+				<form>
+					<div class="row">
+						<div class="col s12 m12 l12">
+							<input class="input" type="text">
+							<label for="">Name</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m12 l12">
+							<input class="validation" type="email">
+							<label>E-mail</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m12 l12">
+							<input class="input" type="tel">
+							<label>tel</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m12 l12">
+							<textarea name="message" id=""></textarea>
+							<label>Message</label>
+						</div>
+					</div>
+					<!-- checkbo and radio -->
+					<div class="row">
+						<div class="col s12 m4 l4">
+							<!-- checkbox -->
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<input type="checkbox">
+									<label>Orange</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<input type="checkbox">
+									<label>Blue</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<input type="checkbox" disabled="disabled">
+									<label>red</label>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m4 l4">
+							<!-- radio -->
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<input id="male" name="gerden" type="radio" value="male">
+									<label>Male</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<input id="female" name="gerden" type="radio" value="female">
+									<label>Female</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<input name="gerden" type="radio" disabled="disabled">
+									<label>disabled</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col s12 m6 l6">
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<span class="title">Lists</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<ul class=" margin-bottom border-bottom">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<ul class="ul-border hoverable">
+							<li class="item-active">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="divider"></div>
+
+<!-- NavBar -->
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h3 class="center title">Navbar</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<nav>
+					<div class="nav-wrapper m-teal">
+						<a href="#" class="brand-logo">logo</a>
+						<ul>
+							<li><a href="#">Normal</a></li>
+							<li class="underline"><a href="#">Underline</a></li>
+							<li class="active"><a href="#">ACTIVE!!</a></li>
+							<li class="dropdown">
+								<a class="btndrop" href="#">Drop Hover</a>
+								<ul class="dropdown-content">
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+								</ul>
+							</li>
+							<li><input type="text" name="search" placeholder="Search..."></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="divider"></div>
+
+<!-- bottons -->
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h3 class="center title">Bottons</h3>
+			</div>
+		</div>
+		<div class="row center">
+			<div class="col s12 m12 l12">
+				<a class="btn" href="#">Buttom</a>
+				<a class="btn btn-disabled" href="#">Buttom</a>
+				<a class="btn btn-radios" href="#"><i class="mdi mdi-plus mdi-24px"></i></a>
+				<a class="btn btn-radios btn-disabled" href="#"><i class="mdi mdi-plus mdi-24px"></i></a>
+				<ul class="dropdown">
+					<a href="#" class="btn btndrop">Hover</a>
+					<ul class="dropdown-content">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="divider"></div>
+
+<!-- Pagination -->
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h3 class="center title">Pagination</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="center col s12 m12 l12">
+				<div class="pagination">
+					<a href="#" class="pag-item prev"><<</a>
+					<a href="#" class="pag-item active">1</a>
+					<a href="#" class="pag-item">2</a>
+					<a href="#" class="pag-item">3</a>
+					<a href="#" class="pag-item">4</a>
+					<a href="#" class="pag-item">5</a>
+					<a href="#" class="pag-item next">>></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="m-blue-grey footer-page-norm">
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="s12 m12 l12">
+					<h3 class="banner-title title">Footer</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m12 l12">
+					<p>Powerd By <a style="color:#fff;" href="">Rondinelli</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m12 l12">
+					<h4 class="banner-title">Social Midia:</h4><br>
+					
+					<a href="https://www.instagram.com/rondinellicrl/" target="_blank"><i class="mdi mdi-instagram"></i>@rondinellicrl</a><br>
+					
+					<a href="https://www.facebook.com/Rond.Rond23" target="_blank"><i class="mdi mdi-facebook-box"></i>Rondinelli Carlos </a><br>
+					
+					<a href="https://github.com/RondinelliCarlos/Zero-Framework" target="_blank"><i class="mdi mdi-github-box"></i>RondinelliCarlos</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
