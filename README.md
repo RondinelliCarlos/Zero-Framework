@@ -1,4 +1,4 @@
-# Zero-Framework
+# Zero Framework
 Zero Framework CSS
 
 Version 0.1:
