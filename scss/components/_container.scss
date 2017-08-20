@@ -3,7 +3,7 @@
 	padding: 0 15px;
 }
 
-@media (max-width: $screen-xs-max) {
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
 	.container {
 		max-width: $screen-xs;
 	}
