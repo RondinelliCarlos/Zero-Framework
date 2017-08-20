@@ -164,17 +164,24 @@
   border-radius: 5px; }
 
 .container {
-  max-width: 1170px;
-  width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 15px; }
 
-@media (min-width: 751px) {
+@media (max-width: 767px) {
   .container {
-    width: 85%; } }
+    max-width: 480px; } }
 
-@media (min-width: 993px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .container {
-    width: 70%; } }
+    max-width: 768px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 992px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px; } }
 
 nav {
   width: 100%;
