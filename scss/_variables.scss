@@ -1,16 +1,16 @@
 $base-path: '../' !default;
 $font-path: $base-path + 'fonts/' !default;
 
-$screen-xs: 480px;
+$screen-xs: 480px !default;
 $screen-xs-min: $screen-xs;
 
-$screen-sm: 768px;
+$screen-sm: 768px !default;
 $screen-sm-min: $screen-sm;
 
-$screen-md: 992px;
+$screen-md: 992px !default;
 $screen-md-min: $screen-md;
 
-$screen-lg: 1200px;
+$screen-lg: 1200px !default;
 $screen-lg-min: $screen-lg;
 
 $screen-xs-max: ($screen-sm-min - 1);
