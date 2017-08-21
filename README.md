@@ -12,3 +12,14 @@ Version 0.2:
 - Bottons;
 - Pagination;
 - Footer.
+
+Version 0.5:
+- Color Classes (Update);
+- Grid System (Update).
+Add:
+- Sass;
+- gulp;
+- gulp-sass;
+- min.css.
+
+Thanks Margato and luanoliveira ^^ !!!
