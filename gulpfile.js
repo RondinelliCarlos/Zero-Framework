@@ -1,22 +1,41 @@
-'use strict';
+var gulp = require('gulp'),
+	sass = require('gulp-sass'),
+	rename = require('gulp-rename'),
+	livereload = require('gulp-livereload'),
+	imagemin = require('gulp-imagemin');
 
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const rename = require("gulp-rename");
-const cssmin = require('gulp-cssmin');
-
-gulp.task('sass', () => {
-    gulp.src('./scss/general.scss')
-        .pipe(rename({
-            basename: "zero-framework"
-        }))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./dist'))
-        .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('./dist'));
+// pasrta sass/scss
+var sassFiles = 'sass/zero.scss';
+//destino
+var cssDest = 'css/';
+var sassDevOptions = {
+	outputStyle: 'expanded'
+}
+var sassProdOptions = {
+	outputStyle: 'compressed'
+}
+gulp.task('sassdev', function(){
+	return gulp.src(sassFiles)
+		.pipe(sass(sassDevOptions).on('error', sass.logError))
+		.pipe(gulp.dest(cssDest));
 });
 
-gulp.task('sass:watch', () => {
-    gulp.watch('./scss/**/*.scss', ['sass']);
+gulp.task('sassprod', function(){
+	return gulp.src(sassFiles)
+		.pipe(sass(sassProdOptions).on('error', sass.logError))
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest(cssDest));
 });
+
+gulp.task('watch', function(){
+	gulp.watch(sassFiles, ['sassdev', 'sassprod']);
+});
+
+gulp.task('image_min' ,function(){
+	gulp.src('img/**/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('img/'));
+});
+
+gulp.task('default', ['sassdev', 'sassprod', 'watch', 'image_min']);
+
