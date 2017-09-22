@@ -1,0 +1,68 @@
+$navbar-height: 60px !default;
+$navbar-line-height: $navbar-height !default;
+$navbar-color: #fff !default;
+
+nav{
+  width: 100%;
+  height: $navbar-height;
+  line-height: $navbar-line-height;
+  
+  .nav-wrapper{
+    min-height: $navbar-height;
+    height: 100%;
+    position: reletive;
+    padding: 0 15px;
+  }
+  a {  color: $navbar-color;  }
+  
+  .brand-logo{
+    position: absolute;
+    display: inline-block;
+    color: $navbar-color;
+    padding: 0 15px;
+    font-size: 2.1rem;
+    &.center{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  ul{
+    margin: 0;
+    float: right;
+    li{
+      float: left;
+      padding: 0;
+    }
+    a {
+      display: block;
+      color: #fff;
+      padding: 0px 15px;
+      cursor: pointer;
+    }
+    a:hover{
+      background-color: rgba(0,0,0,0.1);
+    }
+  }
+  @media (max-width: 883px){
+    a.brand-logo{
+      left: 50%;
+      transform: translate(-50%);
+    }
+    ul{
+      display: none
+    }
+  }
+  .active {
+    background-color: rgba(0,0,0,0.3); 
+  }
+}
+
+.fixed-top{
+  position: relative;
+  height: $navbar-height;
+  z-index: 997;
+  nav{
+    position: fixed;
+  }
+}

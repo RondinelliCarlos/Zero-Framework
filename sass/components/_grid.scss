@@ -1,0 +1,224 @@
+//_grid.sass
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs;
+
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm;
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md;
+
+$screen-lg: 1850px !default;
+$screen-lg-min: $screen-lg;
+
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+$width1: 100%/12;
+$width2: $width1 * 2;
+$width3: $width2 + $width1;
+$width4: $width3 + $width1;
+$width5: $width4 + $width1;
+$width6: $width5 + $width1;
+$width7: $width6 + $width1;
+$width8: $width7 + $width1;
+$width9: $width8 + $width1;
+$width10: $width9 + $width1;
+$width11: $width10 + $width1;
+$width12: $width11 + $width1;
+
+.grid{
+  border: 0.5px solid;
+  border-radius: 6px;
+}
+.container{
+  margin: 0 auto;
+  padding: 0 5%;
+}
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max){
+  max-width: $screen-xs;
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+  max-width: $screen-sm;
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+  max-width: $screen-md;
+}
+
+@media (min-width: $screen-lg-min){
+  max-width: $screen-lg;
+}
+
+.row{
+  margin: 5px 15px;
+  padding: 0px 25px;
+
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .col{
+    float: left;
+    vertical-align: top;
+    min-height: 1px;
+    padding: 10px 10px;
+  }
+}
+.row{
+  .col{
+    &.s1{
+      width: $width1;
+    }
+    &.s2{
+      width: $width2;
+    }
+    &.s3{
+      width: $width3;
+    }
+    &.s4{
+      width: $width4;
+    }
+    &.s5{
+      width: $width5;
+    }
+    &.s6{
+      width: $width6;
+    }
+    &.s7{
+      width: $width7;
+    }
+    &.s8{
+      width: $width8;
+    }
+    &.s9{
+      width: $width9;
+    }
+    &.s10{
+      width: $width10;
+    }
+    &.s11{
+      width: $width11;
+    }
+    &.s12{
+      width: $width12;
+    }
+    @media (min-width: 751px){
+      &.m1{
+        width: $width1;
+      }
+      &.m2{
+        width: $width2;
+      }
+      &.m3{
+        width: $width3;
+      }
+      &.m4{
+        width: $width4;
+      }
+      &.m5{
+        width: $width5;
+      }
+      &.m6{
+        width: $width6;
+      }
+      &.m7{
+        width: $width7;
+      }
+      &.m8{
+        width: $width8;
+      }
+      &.m9{
+        width: $width9;
+      }
+      &.m10{
+        width: $width10;
+      }
+      &.m11{
+        width: $width11;
+      }
+      &.m12{
+        width: $width12;
+      }
+    }
+    @media (min-width: 993px){
+      &.l1{
+        width: $width1;
+      }
+      &.l2{
+        width: $width2;
+      }
+      &.l3{
+        width: $width3;
+      }
+      &.l4{
+        width: $width4;
+      }
+      &.l5{
+        width: $width5;
+      }
+      &.l6{
+        width: $width6;
+      }
+      &.l7{
+        width: $width7;
+      }
+      &.l8{
+        width: $width8;
+      }
+      &.l9{
+        width: $width9;
+      }
+      &.l10{
+        width: $width10;
+      }
+      &.l11{
+        width: $width11;
+      }
+      &.l12{
+        width: $width12;
+      }
+    }
+    @media ($screen-lg){
+      &.xl1{
+        width: $width1;
+      }
+      &.xl2{
+        width: $width2;
+      }
+      &.xl3{
+        width: $width3;
+      }
+      &.xl4{
+        width: $width4;
+      }
+      &.xl5{
+        width: $width5;
+      }
+      &.xl6{
+        width: $width6;
+      }
+      &.xl7{
+        width: $width7;
+      }
+      &.xl8{
+        width: $width8;
+      }
+      &.xl9{
+        width: $width9;
+      }
+      &.xl10{
+        width: $width10;
+      }
+      &.xl11{
+        width: $width11;
+      }
+      &.xl12{
+        width: $width12;
+      }
+    }
+  }
+}

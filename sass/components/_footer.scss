@@ -1,0 +1,15 @@
+.footer{
+  text-decoration: none;
+  &.norm{
+    height: 360px;
+	color: #fff;
+	.mdi {
+	  font-size: 24px;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  position: relative;
+	}
+  }
+}

@@ -1,0 +1,22 @@
+table thead{
+   border-radius: 6px;
+}
+.table {
+   width: 100%;
+   border-collapse: collapse;
+   border-spacing: 0;
+   border-radius: 6px;
+}
+table, th, td, tr {
+   padding: 10px 15px;
+}
+thead th {
+   font-family: "JosefinSans";
+   color: #fff;
+   font-weight: 700;
+}
+tbody tr{
+   border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+   font-family: "roboto";
+   font-weight: 300;
+}

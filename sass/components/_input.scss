@@ -1,0 +1,73 @@
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type=search],
+textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  transition: border 0.3s;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  & + label{
+    font-size: 17px;
+    color: rgba(0,0,0,0.6);
+    font-weight: 600;
+  }
+  &:focus {
+  border-bottom: solid 3px teal
+  }
+}
+
+input{
+  &[type="search"]{
+    background-image: url('https://www.w3schools.com/howto/searchicon.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 40px;
+  }
+  &[name="pesquisar"]{
+    border: none;
+    width: 70px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    color: white;
+    border-radius: 6px;
+    &:focus{
+      width: 100%;
+    }
+  }
+}
+
+
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button{
+  -webkit-appearence: button;
+  cursor: pointer;
+  border: none;
+  padding: 15px 30px;
+  &:hover{
+    box-shadow: 1.5px 1.5px 5px rgba(0,0,0,0.5);
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 2px;
+}
+
+.validation{
+    &:invalid{
+        border-color: red
+    }
+    &:valid{
+        border-color: green
+    }
+}

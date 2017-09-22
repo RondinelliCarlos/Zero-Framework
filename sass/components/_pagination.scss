@@ -1,0 +1,23 @@
+.pagination{
+  display: inline-block;
+  width: auto;
+  overflow: hidden;
+  .pag-item{
+    text-align: center;
+    padding: 10px 15px;
+    color: #000;
+    float: left;
+    &.active{
+      background-color: teal;
+      color: #fff;
+    }
+    &:hover{
+      color: #000;
+      background-color: rgba(0,0,0,0.2);
+    }
+  }
+}
+.prev, 
+.next{
+  background-color: rgba(0,0,0,0.2);
+}
