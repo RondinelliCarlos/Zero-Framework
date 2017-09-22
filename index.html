@@ -4,17 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zero Framework</title>
-        <link rel="stylesheet" href="dist/zero-framework.min.css">
-<!--         <link rel="stylesheet" href="css/zero-framework.css"> -->
+        <link rel="stylesheet" href="css/zero.min.css">
+        <!-- <link rel="stylesheet" href="css/zero.css">-->
         <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
     </head>
     <body>
 
         <!-- Navbar -->
-        <div class="">
+        <div class="fixed-top">
             <nav>
-                <div class="nav-wrapper m-indigo">
-                    <a href="#" class="brand-logo">logo</a>
+                <div class="nav-wrapper white-text red">
+                    <a onclick="return false;" href="#" class="brand-logo ">logo</a>
                     <ul>
                         <li class="underline"><a href="#" class="active">home</a></li>
                         <li class="underline"><a href="#">sobre</a></li>
@@ -26,19 +26,19 @@
         </div>
 
         <!-- Banner Index -->
-        <div class="banner m-indigo ">
+        <div id="index1" class="banner parallax bg1">
             <div  class="container section">
                 <div class="row">
-                    <div class="center col s12 m12 l12">
-                        <h1 class="banner-title title">Zero Framework</h1>
-                        <h2 class="banner-title">version 0.5</h2>
+                    <div class="col s12 m12 l12 white-text">
+                        <h1 class="first-title">Zero Framework</h1>
+                        <h2 class="second-title">version 0.5.5</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 m12 l12">
                         <div class="caption">
-                            <a href="https://github.com/RondinelliCarlos/Zero-Framework/archive/master.zip" target="_blank" class="btn m-deep-orange">Download <i class="mdi mdi-cloud-download"></i></a>
-                            <a href="https://github.com/RondinelliCarlos/Zero-Framework" target="_blank" class="btn m-blue">GitHub <i class="mdi mdi-github-box"></i></a>
+                            <a href="https://github.com/RondinelliCarlos/Zero-Framework/archive/master.zip" target="_blank" class="btn deep-orange border">Download <i class="mdi mdi-cloud-download"></i></a>
+                            <a href="https://github.com/RondinelliCarlos/Zero-Framework" target="_blank" class="btn blue border">GitHub <i class="mdi mdi-github-box"></i></a>
                         </div>
                     </div>
                 </div>
@@ -49,45 +49,45 @@
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m12 l4">
                         <div class="card">
-                            <div class="center">
-                                <h3 class="card-title">Responsive</h3><br>
-                                <i class="mdi mdi-responsive mdi-100px"></i>
-                            </div>
-                            <div class="card-content">
+                            <div class="center card-content">
+                                <span class="card-title first-title">Responsive</span>
+                                <i class="mdi mdi-responsive"></i>
+                                <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat.
+                            </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m12 l4">
                         <div class="card">
-                            <div class="center">
-                                <h3 class="card-title">Standard CSS</h3><br>
-                                <i class="mdi mdi-language-css3 mdi-100px"></i>
-                            </div>
-                            <div class="card-content">
+                            <div class="center card-content">
+                                <span class="card-title first-title">Standard CSS</span>
+                                <i class="mdi mdi-language-css3"></i>
+                                <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat.
+                            </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m12 l4">
                         <div class="card">
-                            <div class="center">
-                                <h3 class="card-title">Standard CSS</h3><br>
-                                <i class="mdi mdi-diamond mdi-100px"></i>
-                            </div>
-                            <div class="card-content">
+                            <div class="center card-content">
+                                <span class="card-title first-title">Deisgn</span>
+                                <i class="mdi mdi-diamond"></i>
+                                <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat.
+                            </p>
                             </div>
                         </div>
                     </div>
@@ -102,77 +102,818 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h3 class="title center">Color classes</h3>
+                        <h3 class="third-title center">Color classes</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12 m4 l2 m-red">
-                        <p>.m-red</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-pink">
-                        <p>.m-pink</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-purple">
-                        <p>.m-purple</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-deep-purple">
-                        <p>.m-deep-purple</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-indigo">
-                        <p>.m-indigo</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-blue">
-                        <p>.m-blue</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-light-blue">
-                        <p>.m-light-blue</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-cyan">
-                        <p>.m-cyan</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-teal">
-                        <p>.m-teal</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-green">
-                        <p>.m-green</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-light-green">
-                        <p>.m-light-green</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-yellow">
-                        <p>.m-yellow</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-amber">
-                        <p>.m-amber</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-orange">
-                        <p>.m-orange</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-deep-orange">
-                        <p>.m-deep-orange</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-brown">
-                        <p>.m-brown</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-grey">
-                        <p>.m-grey</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-blue-grey">
-                        <p>.m-blue-grey</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-white">
-                        <p>.m-white</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-black">
-                        <p>.m-black</p>
-                    </div>
-                    <div class="col s12 m4 l2 m-transparent">
-                        <p>.m-transparent</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+                	<div class="col s12 m12 l12">
+                		<div class="row">
+	                		<!-- RED -->
+		                    <div class="col s12 m6 l3">
+                    			<div class="col s12 m12 l12 red lighten-5">
+		                        	<p>red lighten-5</p>
+								</div>
+								<div class="col s12 m12 l12 red lighten-4">
+                        			<p>red lighten-4</p>
+								</div>
+								<div class="col s12 m12 l12 red lighten-3">
+                		        	<p>red lighten-3</p>
+								</div>
+								<div class="col s12 m12 l12 red lighten-2">
+        		                	<p>red lighten-2</p>
+								</div>
+								<div class="col s12 m12 l12 red lighten-1">
+	        	                	<p>red lighten-1</p>
+								</div>
+								<div class="col s12 m12 l12 red">
+                        			<p>red</p>
+								</div>
+								<div class="col s12 m12 l12 red darken-1 white-text">
+                		        	<p>red darken-1</p>
+								</div>
+								<div class="col s12 m12 l12 red darken-2 white-text">
+        		                	<p>red darken-2</p>
+								</div>
+								<div class="col s12 m12 l12 red darken-3 white-text">
+		                        	<p>red darken-3</p>
+								</div>
+								<div class="col s12 m12 l12 red darken-4 white-text">
+                        			<p>red darken-4</p>
+								</div>
+								<div class="col s12 m12 l12 red accent-1">
+                		        	<p>red accent-1</p>
+								</div>
+								<div class="col s12 m12 l12 red accent-2">
+                		        	<p>red accent-2</p>
+								</div>
+								<div class="col s12 m12 l12 red accent-3">
+        		                	<p>red accent-3</p>
+								</div>
+								<div class="col s12 m12 l12 red accent-4">
+		                        	<p>red accent-4</p>
+								</div>
+    		    		    </div>
+        		            <!-- PINK -->
+            		        <div class="col s12 m6 l3">
+                    	       <div class="col s12 m12 l12 pink lighten-5">
+                                	<p>pink lighten-5</p>
+		      	       			</div>
+                                <div class="col s12 m12 l12 pink lighten-4">
+                                	<p>pink lighten-4</p>
+		  				        </div>
+        						<div class="col s12 m12 l12 pink lighten-3">
+                                	<p>pink lighten-3</p>
+				        		</div>
+						        <div class="col s12 m12 l12 pink lighten-2">
+                                	<p>pink lighten-2</p>
+		          				</div>
+				        		<div class="col s12 m12 l12 pink lighten-1">
+                                	<p>pink lighten-1</p>
+        						</div>
+		          				<div class="col s12 m12 l12 pink">
+                                  	<p>pink</p>
+        						</div>
+		          				<div class="col s12 m12 l12 pink darken-1 white-text">
+                                  	<p>pink darken-1</p>
+        						</div>
+		          				<div class="col s12 m12 l12 pink darken-2 white-text">
+                                  	<p>pink darken-2</p>
+        						</div>
+		          				<div class="col s12 m12 l12 pink darken-3 white-text">
+                                  	<p>pink darken-3</p>
+        						</div>
+		          				<div class="col s12 m12 l12 pink darken-4 white-text">
+                                  	<p>pink darken-4</p>
+        						</div>
+		          				<div class="col s12 m12 l12 pink accent-1">
+                                  	<p>pink accent-1</p>
+        						</div>
+		          				<div class="col s12 m12 l12 pink accent-2">
+                                  	<p>pink accent-2</p>
+        						</div>
+			         			<div class="col s12 m12 l12 pink accent-3">
+                                	<p>pink accent-3</p>
+		          				</div>
+				        		<div class="col s12 m12 l12 pink accent-4">
+                                	<p>pink accent-4</p>
+        						</div>
+                		    </div>
+                    		<!-- PURPLE -->
+		                    <div class="col s12 m6 l3">
+                    	       <div class="col s12 m12 l12 purple lighten-5">
+                                	<p>purple lighten-5</p>
+		          				</div>
+				        		<div class="col s12 m12 l12 purple lighten-4">
+                                	<p>purple lighten-4</p>
+        						</div>
+		          				<div class="col s12 m12 l12 purple lighten-3">
+                                  	<p>purple lighten-3</p>
+        						</div>
+		          				<div class="col s12 m12 l12 purple lighten-2">
+                                  	<p>purple lighten-2</p>
+        						</div>
+		          				<div class="col s12 m12 l12 purple lighten-1">
+                                  	<p>purple lighten-1</p>
+        						</div>
+		          				<div class="col s12 m12 l12 purple">
+                                  	<p>purple</p>
+						        </div>
+        						<div class="col s12 m12 l12 purple darken-1 white-text">
+                                	<p>purple darken-1</p>
+				        		</div>
+						        <div class="col s12 m12 l12 purple darken-2 white-text">
+                                	<p>purple darken-2</p>
+		          				</div>
+				        		<div class="col s12 m12 l12 purple darken-3 white-text">
+                                	<p>purple darken-3</p>
+        						</div>
+		          				<div class="col s12 m12 l12 purple darken-4 white-text">
+                                  	<p>purple darken-4</p>
+        						</div>
+		          				<div class="col s12 m12 l12 purple accent-1">
+                                  	<p>purple accent-1</p>
+        						</div>
+		          				<div class="col s12 m12 l12 purple accent-2">
+                                  	<p>purple accent-2</p>
+						        </div>
+        						<div class="col s12 m12 l12 purple accent-3">
+                                	<p>purple accent-3</p>
+				        		</div>
+						        <div class="col s12 m12 l12 purple accent-4">
+                                	<p>purple accent-4</p>
+		          				</div>
+    		                </div>
+        		            <!-- DEEP PURPLE -->
+            		        <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 deep-purple lighten-5">
+                        	<p>deep-purple lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple lighten-4">
+                        	<p>deep-purple lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple lighten-3">
+                        	<p>deep-purple lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple lighten-2">
+                        	<p>deep-purple lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple lighten-1">
+                        	<p>deep-purple lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple">
+                        	<p>deep-purple</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple darken-1 white-text">
+                        	<p>deep-purple darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple darken-2 white-text">
+                        	<p>deep-purple darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple darken-3 white-text">
+                        	<p>deep-purple darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple darken-4 white-text">
+                        	<p>deep-purple darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple accent-1">
+                        	<p>deep-purple accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple accent-2">
+                        	<p>deep-purple accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple accent-3">
+                        	<p>deep-purple accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 deep-purple accent-4">
+                        	<p>deep-purple accent-4</p>
+						</div>
+                		    </div>
+                		</div>
+                		<div class="row">
+	                    	<!-- INDIGO -->
+		                    <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 indigo lighten-5">
+                        	<p>indigo lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 indigo lighten-4">
+                        	<p>indigo lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 indigo lighten-3">
+                        	<p>indigo lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 indigo lighten-2">
+                        	<p>indigo lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 indigo lighten-1">
+                        	<p>indigo lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 indigo">
+                        	<p>indigo</p>
+						</div>
+						<div class="col s12 m12 l12 indigo darken-1 white-text">
+                        	<p>indigo darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 indigo darken-2 white-text">
+                        	<p>indigo darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 indigo darken-3 white-text">
+                        	<p>indigo darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 indigo darken-4 white-text">
+                        	<p>indigo darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 indigo accent-1">
+                        	<p>indigo accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 indigo accent-2">
+                        	<p>indigo accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 indigo accent-3">
+                        	<p>indigo accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 indigo accent-4">
+                        	<p>indigo accent-4</p>
+						</div>
+    		                </div>
+        		            <!-- BLUE -->
+            		        <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 blue lighten-5">
+                        	<p>blue lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 blue lighten-4">
+                        	<p>blue lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 blue lighten-3">
+                        	<p>blue lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 blue lighten-2">
+                        	<p>blue lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 blue lighten-1">
+                        	<p>blue lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 blue">
+                        	<p>blue</p>
+						</div>
+						<div class="col s12 m12 l12 blue darken-1 white-text">
+                        	<p>blue darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 blue darken-2 white-text">
+                        	<p>blue darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 blue darken-3 white-text">
+                        	<p>blue darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 blue darken-4 white-text">
+                        	<p>blue darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 blue accent-1">
+                        	<p>blue accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 blue accent-2">
+                        	<p>blue accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 blue accent-3">
+                        	<p>blue accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 blue accent-4">
+                        	<p>blue accent-4</p>
+						</div>
+                		    </div>
+	                    	<!-- LIGHT BLUE -->
+		                    <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 light-blue lighten-5">
+                        	<p>light-blue lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue lighten-4">
+                        	<p>light-blue lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue lighten-3">
+                        	<p>light-blue lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue lighten-2">
+                        	<p>light-blue lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue lighten-1">
+                        	<p>light-blue lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue">
+                        	<p>light-blue</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue darken-1 white-text">
+                        	<p>light-blue darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue darken-2 white-text">
+                        	<p>light-blue darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue darken-3 white-text">
+                        	<p>light-blue darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue darken-4 white-text">
+                        	<p>light-blue darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue accent-1">
+                        	<p>light-blue accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue accent-2">
+                        	<p>light-blue accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue accent-3">
+                        	<p>light-blue accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 light-blue accent-4">
+                        	<p>light-blue accent-4</p>
+						</div>
+    		                </div>
+        		            <!-- CYAN -->
+            		        <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 cyan lighten-5">
+                        	<p>cyan lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 cyan lighten-4">
+                        	<p>cyan lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 cyan lighten-3">
+                        	<p>cyan lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 cyan lighten-2">
+                        	<p>cyan lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 cyan lighten-1">
+                        	<p>cyan lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 cyan">
+                        	<p>cyan</p>
+						</div>
+						<div class="col s12 m12 l12 cyan darken-1 white-text">
+                        	<p>cyan darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 cyan darken-2 white-text">
+                        	<p>cyan darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 cyan darken-3 white-text">
+                        	<p>cyan darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 cyan darken-4 white-text">
+                        	<p>cyan darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 cyan accent-1">
+                        	<p>cyan accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 cyan accent-2">
+                        	<p>cyan accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 cyan accent-3">
+                        	<p>cyan accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 cyan accent-4">
+                        	<p>cyan accent-4</p>
+						</div>
+                		    </div>
+                    	</div>
+                    	<div class="row">
+	                    	<!-- TEAL -->
+		                    <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 teal lighten-5">
+                        	<p>teal lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 teal lighten-4">
+                        	<p>teal lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 teal lighten-3">
+                        	<p>teal lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 teal lighten-2">
+                        	<p>teal lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 teal lighten-1">
+                        	<p>teal lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 teal">
+                        	<p>teal</p>
+						</div>
+						<div class="col s12 m12 l12 teal darken-1 white-text">
+                        	<p>teal darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 teal darken-2 white-text">
+                        	<p>teal darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 teal darken-3 white-text">
+                        	<p>teal darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 teal darken-4 white-text">
+                        	<p>teal darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 teal accent-1">
+                        	<p>teal accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 teal accent-2">
+                        	<p>teal accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 teal accent-3">
+                        	<p>teal accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 teal accent-4">
+                        	<p>teal accent-4</p>
+						</div>
+    		                </div>
+        		            <!-- GREEN -->
+            		        <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 green lighten-5">
+                        	<p>green lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 green lighten-4">
+                        	<p>green lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 green lighten-3">
+                        	<p>green lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 green lighten-2">
+                        	<p>green lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 green lighten-1">
+                        	<p>green lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 green">
+                        	<p>green</p>
+						</div>
+						<div class="col s12 m12 l12 green darken-1 white-text">
+                        	<p>green darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 green darken-2 white-text">
+                        	<p>green darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 green darken-3 white-text">
+                        	<p>green darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 green darken-4 white-text">
+                        	<p>green darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 green accent-1">
+                        	<p>green accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 green accent-2">
+                        	<p>green accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 green accent-3">
+                        	<p>green accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 green accent-4">
+                        	<p>green accent-4</p>
+						</div>
+                		    </div>
+                    		<!-- LIGHT GREEN -->
+		                    <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 light-green lighten-5">
+                        	<p>light-green lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 light-green lighten-4">
+                        	<p>light-green lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 light-green lighten-3">
+                        	<p>light-green lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 light-green lighten-2">
+                        	<p>light-green lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 light-green lighten-1">
+                        	<p>light-green lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 light-green">
+                        	<p>light-green</p>
+						</div>
+						<div class="col s12 m12 l12 light-green darken-1 white-text">
+                        	<p>light-green darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 light-green darken-2 white-text">
+                        	<p>light-green darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 light-green darken-3 white-text">
+                        	<p>light-green darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 light-green darken-4 white-text">
+                        	<p>light-green darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 light-green accent-1">
+                        	<p>light-green accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 light-green accent-2">
+                        	<p>light-green accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 light-green accent-3">
+                        	<p>light-green accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 light-green accent-4">
+                        	<p>light-green accent-4</p>
+						</div>
+    		                </div>
+        		            <!-- YELLOW -->
+            		        <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 yellow lighten-5">
+                        	<p>yellow lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 yellow lighten-4">
+                        	<p>yellow lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 yellow lighten-3">
+                        	<p>yellow lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 yellow lighten-2">
+                        	<p>yellow lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 yellow lighten-1">
+                        	<p>yellow lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 yellow">
+                        	<p>yellow</p>
+						</div>
+						<div class="col s12 m12 l12 yellow darken-1 white-text">
+                        	<p>yellow darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 yellow darken-2 white-text">
+                        	<p>yellow darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 yellow darken-3 white-text">
+                        	<p>yellow darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 yellow darken-4 white-text">
+                        	<p>yellow darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 yellow accent-1">
+                        	<p>yellow accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 yellow accent-2">
+                        	<p>yellow accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 yellow accent-3">
+                        	<p>yellow accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 yellow accent-4">
+                        	<p>yellow accent-4</p>
+						</div>
+                		    </div>
+                    	</div>
+                    	<div class="row">
+	                    	<!-- AMBER -->
+		                    <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 amber lighten-5">
+                        	<p>amber lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 amber lighten-4">
+                        	<p>amber lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 amber lighten-3">
+                        	<p>amber lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 amber lighten-2">
+                        	<p>amber lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 amber lighten-1">
+                        	<p>amber lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 amber">
+                        	<p>amber</p>
+						</div>
+						<div class="col s12 m12 l12 amber darken-1 white-text">
+                        	<p>amber darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 amber darken-2 white-text">
+                        	<p>amber darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 amber darken-3 white-text">
+                        	<p>amber darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 amber darken-4 white-text">
+                        	<p>amber darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 amber accent-1">
+                        	<p>amber accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 amber accent-2">
+                        	<p>amber accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 amber accent-3">
+                        	<p>amber accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 amber accent-4">
+                        	<p>amber accent-4</p>
+						</div>
+    		                </div>
+        		            <!-- ORANGE -->
+            		        <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 orange lighten-5">
+                        	<p>orange lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 orange lighten-4">
+                        	<p>orange lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 orange lighten-3">
+                        	<p>orange lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 orange lighten-2">
+                        	<p>orange lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 orange lighten-1">
+                        	<p>orange lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 orange">
+                        	<p>orange</p>
+						</div>
+						<div class="col s12 m12 l12 orange darken-1 white-text">
+                        	<p>orange darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 orange darken-2 white-text">
+                        	<p>orange darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 orange darken-3 white-text">
+                        	<p>orange darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 orange darken-4 white-text">
+                        	<p>orange darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 orange accent-1">
+                        	<p>orange accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 orange accent-2">
+                        	<p>orange accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 orange accent-3">
+                        	<p>orange accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 orange accent-4">
+                        	<p>orange accent-4</p>
+						</div>
+                		    </div>
+	                    	<!-- DEEP ORANGE -->
+		                    <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 deep-orange lighten-5">
+                        	<p>deep-orange lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange lighten-4">
+                        	<p>deep-orange lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange lighten-3">
+                        	<p>deep-orange lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange lighten-2">
+                        	<p>deep-orange lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange lighten-1">
+                        	<p>deep-orange lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange">
+                        	<p>deep-orange</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange darken-1 white-text">
+                        	<p>deep-orange darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange darken-2 white-text">
+                        	<p>deep-orange darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange darken-3 white-text">
+                        	<p>deep-orange darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange darken-4 white-text">
+                        	<p>deep-orange darken-4</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange accent-1">
+                        	<p>deep-orange accent-1</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange accent-2">
+                        	<p>deep-orange accent-2</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange accent-3">
+                        	<p>deep-orange accent-3</p>
+						</div>
+						<div class="col s12 m12 l12 deep-orange accent-4">
+                        	<p>deep-orange accent-4</p>
+						</div>
+    		                </div>
+        		            <!-- BROWN -->
+            		        <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 brown lighten-5">
+                        	<p>brown lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 brown lighten-4">
+                        	<p>brown lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 brown lighten-3">
+                        	<p>brown lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 brown lighten-2">
+                        	<p>brown lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 brown lighten-1">
+                        	<p>brown lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 brown">
+                        	<p>brown</p>
+						</div>
+						<div class="col s12 m12 l12 brown darken-1 white-text">
+                        	<p>brown darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 brown darken-2 white-text">
+                        	<p>brown darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 brown darken-3 white-text">
+                        	<p>brown darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 brown darken-4 white-text">
+                        	<p>brown darken-4</p>
+						</div>
+                		    </div>
+                        </div>
+                        <div class="row">
+	                        <!-- GREY -->
+		                    <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 grey lighten-5">
+                        	<p>grey lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 grey lighten-4">
+                        	<p>grey lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 grey lighten-3">
+                        	<p>grey lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 grey lighten-2">
+                        	<p>grey lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 grey lighten-1">
+                        	<p>grey lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 grey">
+                        	<p>grey</p>
+						</div>
+						<div class="col s12 m12 l12 grey darken-1 white-text">
+                        	<p>grey darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 grey darken-2 white-text">
+                        	<p>grey darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 grey darken-3 white-text">
+                        	<p>grey darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 grey darken-4 white-text">
+                        	<p>grey darken-4</p>
+						</div>
+    		                </div>
+        		            <!-- BLUE GREY -->
+            		        <div class="col s12 m6 l3">
+                    	<div class="col s12 m12 l12 blue-grey lighten-5">
+                        	<p>blue-grey lighten-5</p>
+						</div>
+						<div class="col s12 m12 l12 blue-grey lighten-4">
+                        	<p>blue-grey lighten-4</p>
+						</div>
+						<div class="col s12 m12 l12 blue-grey lighten-3">
+                        	<p>blue-grey lighten-3</p>
+						</div>
+						<div class="col s12 m12 l12 blue-grey lighten-2">
+                        	<p>blue-grey lighten-2</p>
+						</div>
+						<div class="col s12 m12 l12 blue-grey lighten-1">
+                        	<p>blue-grey lighten-1</p>
+						</div>
+						<div class="col s12 m12 l12 blue-grey">
+                        	<p>blue-grey</p>
+						</div>
+						<div class="col s12 m12 l12 blue-grey darken-1 white-text">
+                        	<p>blue-grey darken-1</p>
+						</div>
+						<div class="col s12 m12 l12 blue-grey darken-2 white-text">
+                        	<p>blue-grey darken-2</p>
+						</div>
+						<div class="col s12 m12 l12 blue-grey darken-3 white-text">
+                        	<p>blue-grey darken-3</p>
+						</div>
+						<div class="col s12 m12 l12 blue-grey darken-4 white-text">
+                        	<p>blue-grey darken-4</p>
+						</div>
+                		    </div>
+                    		<!-- WHITE -->
+		                    <div class="col s12 m6 l3">
+                    		<div class="col s12 m12 l12 white">
+                        		<p>.m-white</p>
+							</div>
+    		                </div>
+        		            <!-- BLACK -->
+            		        <div class="col s12 m6 l3">
+                    		<div class="col s12 m12 l12 black white-text">
+                        		<p>.m-black</p>
+							</div>
+                		    </div>
+                    		<!-- TRANSPARENT -->
+	                    	<div class="col s12 m6 l3">
+                    		<div class="col s12 m12 l12 transparent">
+                        		<p>.m-transparent</p>
+							</div>
+                    		</div>
+						</div>
+                	</div>
+            	</div>
+        	</div>
+		</div>
+        
         <div class="divider"></div>
 
         <!-- System Grid -->
@@ -180,7 +921,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h3 class="center title">Grid System</h3>
+                        <h3 class="center third-title">Grid System</h3>
                     </div>
                 </div>
                 <div class="row center">
@@ -240,13 +981,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h3 class="center title">Tables</h3>
+                        <h3 class="center third-title">Tables</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <table class="tables">
-                            <thead class="m-red">
+                        <table class="table">
+                            <thead class="red">
                                 <tr>
                                     <th>Firstname</th>
                                     <th>Lastname</th> 
@@ -283,33 +1024,35 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h3 class="center title">Forms and Lists</h3>
+                        <h3 class="center second-title">Forms and Lists</h3>
                     </div>
                 </div>
                 <div class="row card">
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m12 l6">
                         <div class="row">
                             <div class="col s12 m12 l12">
-                                <span class="title">Input Form</span>
+                                <h4 class="center sixth-title">Input Form</h4>
                             </div>
                         </div>
-                        <form>
+                        <form action="">
                             <div class="row">
-                                <div class="col s12 m12 l12">
-                                    <input class="input" type="text">
-                                    <label for="">Name</label>
+                                <div class="col s12 m12 l6">
+                                    <input type="text" id="name" required="required">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="col s12 m12 l6">
+                                    <input class="validation" type="email" id="email" required="required">
+                                    <label for="email">E-mail</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col s12 m12 l12">
-                                    <input class="validation" type="email">
-                                    <label>E-mail</label>
+                                <div class="col s12 m6 l6">
+                                    <input type="tel" id="tel">
+                                    <label for="tel">Tel</label>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m12 l12">
-                                    <input class="input" type="tel">
-                                    <label>tel</label>
+                                <div class="col s12 m6 l6">
+                                    <input type="search" id="search">
+                                    <label for="search">Search</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -317,6 +1060,18 @@
                                     <textarea name="message" id=""></textarea>
                                     <label>Message</label>
                                 </div>
+                            </div>
+
+                            <!-- buttons -->
+                            <div class="row">
+                            	<div class="col s12 m12 l12">
+                            		<button class="btn m-red" type="submit">
+                            			Subimit <i class="mdi mdi-send"></i>
+                            		</button>
+                            		<button class="btn m-red" type="reset">
+                            			reset <i class="mdi mdi-reload"></i>
+                            		</button>
+                            	</div>
                             </div>
                             <!-- checkbo and radio -->
                             <div class="row">
@@ -365,10 +1120,10 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m12 l6">
                         <div class="row">
                             <div class="col s12 m12 l12">
-                                <span class="title">Lists</span>
+                                <h4 class="sixth-title center">Lists</h4>
                             </div>
                         </div>
                         <div class="row">
@@ -395,6 +1150,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="divider"></div>
 
         <!-- NavBar -->
@@ -402,28 +1158,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h3 class="center title">Navbar</h3>
+                        <h3 class="center third-title">Navbar</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 m12 l12">
                         <nav>
-                            <div class="nav-wrapper m-teal">
-                                <a href="#!" class="brand-logo">logo</a>
+                            <div class="nav-wrapper teal">
+                                <a onclick="return false;" href="#" class="brand-logo">logo</a>
                                 <ul>
-                                    <li><a href="#!">Normal</a></li>
-                                    <li class="underline"><a href="#!">Underline</a></li>
-                                    <li class="active"><a href="#!">ACTIVE!!</a></li>
-                                    <li class="dropdown">
-                                        <a class="btndrop" href="#!">Drop Hover</a>
-                                        <ul class="dropdown-content">
-                                            <li><a href="#!">1</a></li>
-                                            <li><a href="#!">2</a></li>
-                                            <li><a href="#!">3</a></li>
-                                            <li><a href="#!">4</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><input type="text" name="search" placeholder="Search..."></li>
+                                    <li><a onclick="return false;" href="#">Normal</a></li>
+                                    <li class="underline"><a onclick="return false;" href="#">Underline</a></li>
+                                    <li class="active"><a onclick="return false;" href="#">ACTIVE!!</a></li>
+                                    <li><input type="search" name="pesquisar" placeholder="Search..."></li>
                                 </ul>
                             </div>
                         </nav>
@@ -431,35 +1178,92 @@
                 </div>
             </div>
         </div>
+        
         <div class="divider"></div>
-
+        
+        <!-- Cards -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card-panel small indigo">
+                            <span class="white-text">Card-panel: Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  </span>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Normal Card </span>
+                                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                            </div>
+                            <div class="card-action">
+                            	<a onclick="return false;" href="#">This is a Link</a>
+                            	<a onclick="return false;" href="#">This is a Link</a>
+                            </div>
+                        </div>
+                    </div><div class="col s12 m12 l4">
+                        <div class="card">
+                        	<div class="card-image">
+                        		<img src="img/banner/1.jpg" />
+                        		<span class="card-title">Card Image </span>
+                        	</div>
+                            <div class="card-content">
+                                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l3">
+                        <div class="card small">
+                            <div class="card-content">
+                                <span class="card-title">Small </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="card medium">
+                            <div class="card-content">
+                                <span class="card-title">Medium </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="card large">
+                            <div class="card-content">
+                                <span class="card-title">Large </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="card biger">
+                            <div class="card-content">
+                                <span class="card-title">Biger </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
         <!-- bottons -->
         <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h3 class="center title">Bottons</h3>
+                        <h3 class="center third-title">Bottons</h3>
                     </div>
                 </div>
-                <div class="row center">
+                <div class="row center m-red">
                     <div class="col s12 m12 l12">
-                        <a class="btn" href="#!">Buttom</a>
-                        <a class="btn btn-disabled" href="#!">Buttom</a>
+                        <button onclick="return false;" class="btn btn-square pink" href="#">Buttom</button>
+                        <a onclick="return false;" class="btn btn-square disabled" href="#">Buttom</a>
                     </div>
-                    <div class="div  col s12 m12 l12">
-                        <a class="btn btn-radios" href="#!"><i class="mdi mdi-plus mdi-24px"></i></a>
-                        <a class="btn btn-radios btn-disabled" href="#!"><i class="mdi mdi-plus mdi-24px"></i></a>
-                    </div>
-                    <div class="div col s12 m12 l12">
-                        <ul class="dropdown">
-                            <a href="#!" class="btn btndrop">Hover</a>
-                            <ul class="dropdown-content">
-                                <li><a href="#!">1</a></li>
-                                <li><a href="#!">2</a></li>
-                                <li><a href="#!">3</a></li>
-                                <li><a href="#!">4</a></li>
-                            </ul>
-                        </ul>
+                    <div class="col s12 m12 l12">
+                        <a onclick="return false;" class="btn btn-radios red" href="#"><i class="mdi mdi-plus mdi-24px"></i></a>
+                        <button onclick="return false;" class="btn btn-radios" disabled="disabled" href="#"><i class="mdi mdi-plus mdi-24px"></i></button>
                     </div>
                 </div>
             </div>
@@ -471,47 +1275,47 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h3 class="center title">Pagination</h3>
+                        <h3 class="center third-title">Pagination</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="center col s12 m12 l12">
                         <div class="pagination">
-                            <a href="#!" class="pag-item prev"><<</a>
-                            <a href="#!" class="pag-item active">1</a>
-                            <a href="#!" class="pag-item">2</a>
-                            <a href="#!" class="pag-item">3</a>
-                            <a href="#!" class="pag-item">4</a>
-                            <a href="#!" class="pag-item">5</a>
-                            <a href="#!" class="pag-item next">>></a>
+                            <a onclick="return false;" href="#" class="pag-item prev disabled"><<</a>
+                            <a onclick="return false;" href="#" class="pag-item active">1</a>
+                            <a onclick="return false;" href="#" class="pag-item">2</a>
+                            <a onclick="return false;" href="#" class="pag-item">3</a>
+                            <a onclick="return false;" href="#" class="pag-item">4</a>
+                            <a onclick="return false;" href="#" class="pag-item">5</a>
+                            <a onclick="return false;" href="#" class="pag-item next">>></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer class="m-blue-grey footer-page-norm">
+        <footer class="blue-grey footer norm center">
             <div class="section">
                 <div class="container">
                     <div class="row">
                         <div class="s12 m12 l12">
-                            <h3 class="banner-title title">Footer</h3>
+                            <h3 class="third-title">Footer</h3>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col s12 m12 l12">
-                            <p>Powerd By <a style="color:#fff;" href="">Rondinelli</a></p>
+                            <p>Powerd By <a onclick="return false;" style="color:#fff;" href="">Rondinelli</a></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col s12 m12 l12">
-                            <h4 class="banner-title">Social Midia:</h4><br>
+                            <h4 class="fifith-title">Social Midia:</h4><br>
 
-                            <a href="https://www.instagram.com/rondinellicrl/" target="_blank"><i class="mdi mdi-instagram"></i>@rondinellicrl</a><br>
+                            <a href="https://www.instagram.com/rondinellicrl/"><i class="mdi mdi-instagram white-text mdi-36px" target="_blank"></i></a>
 
-                            <a href="https://www.facebook.com/Rond.Rond23" target="_blank"><i class="mdi mdi-facebook-box"></i>Rondinelli Carlos </a><br>
+                            <a href="https://www.facebook.com/Rond.Rond23"><i class="mdi mdi-facebook-box white-text mdi-36px" target="_blank"></i></a>
 
-                            <a href="https://github.com/RondinelliCarlos/Zero-Framework" target="_blank"><i class="mdi mdi-github-box"></i>RondinelliCarlos</a>
+                            <a href="https://github.com/RondinelliCarlos/Zero-Framework"><i class="mdi mdi-github-box white-text mdi-36px" target="_blank"></i></a>
                         </div>
                     </div>
                 </div>
